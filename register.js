@@ -35,7 +35,8 @@ submit.addEventListener("click", function (event) {
     .then((userCredential) => {
       const user = userCredential.user;
       alert("Account created successfully!");
-      window.location.href="/index.html";
+      window.location.href = "./index.html";
+
     })
     .catch((error) => {
       const errorMessage = error.message;
