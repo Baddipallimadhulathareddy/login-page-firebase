@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
       .then((userCredential) => {
         // Login successful
         alert("Logged in successfully!");
-        window.location.href = "/home.html"; // Redirect to home page
+        window.location.href = "./home.html"; // ✅ Correct for GitHub Page
       })
       .catch((error) => {
         const errorMessage = error.message;
